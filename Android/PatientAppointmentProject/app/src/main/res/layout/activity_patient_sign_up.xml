@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".patient.PatientSignUpActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="4dp"
+        android:layout_marginBottom="30dp"
+        app:cardElevation="4dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/login_headding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo_icon" />
+
+                <TextView
+                    android:id="@+id/txt_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="PATIENT SIGNUP"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="#FFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/rectangle_box"
+                android:rotation="45"
+                android:layout_below="@+id/login_headding"
+                android:layout_marginTop="-15dp"
+                android:layout_centerHorizontal="true"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:layout_below="@+id/login_headding"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:textAllCaps="true"
+                    android:text="Patient Name: "
+                    android:textColor="@android:color/holo_red_dark" />
+
+                <EditText
+                    android:id="@+id/edt_patient_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_empty_box"
+                    android:ems="10"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:hint="Enter Your Name"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:textAllCaps="true"
+                    android:text="Patient User Name: "
+                    android:textColor="@android:color/holo_red_dark" />
+
+                <EditText
+                    android:id="@+id/edt_patient_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_empty_box"
+                    android:ems="10"
+                    android:hint="Enter User Name"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:textAllCaps="true"
+                    android:text="Patient Password: "
+                    android:textColor="@android:color/holo_red_dark" />
+
+                <EditText
+                    android:id="@+id/edt_patient_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_empty_box"
+                    android:ems="10"
+                    android:hint="eg:pass001"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:inputType="textPassword"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:textAllCaps="true"
+                    android:text="Patient Contact: "
+                    android:textColor="@android:color/holo_red_dark" />
+
+                <EditText
+                    android:id="@+id/edt_patient_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:background="@drawable/rectangle_empty_box"
+                    android:ems="10"
+                    android:hint="eg:03461234567"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:textAllCaps="true"
+                    android:text="Patient Address: "
+                    android:textColor="@android:color/holo_red_dark" />
+
+                <EditText
+                    android:id="@+id/edt_patient_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="left"
+                    android:background="@drawable/rectangle_empty_box"
+                    android:ems="10"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:hint="Enter Address"
+                    android:inputType="textMultiLine"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:textAllCaps="true"
+                    android:text="Gender: "
+                    android:textColor="@android:color/holo_red_dark" />
+
+                <RadioGroup
+                    android:id="@+id/radio_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rectangle_empty_box"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <RadioButton
+                        android:id="@+id/radio_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:enabled="true"
+                        android:checked="true"
+                        android:text="Male"
+                        android:textColor="@color/colorAccent" />
+
+                    <RadioButton
+                        android:id="@+id/radio_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Female"
+                        android:textColor="@color/colorAccent" />
+
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btn_add_patient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Patient"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rectangle_box"
+                    android:textColor="@android:color/white"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

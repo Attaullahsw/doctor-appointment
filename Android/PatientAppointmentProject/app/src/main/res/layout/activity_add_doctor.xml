@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AddDoctorActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:paddingBottom="50dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alex_brush"
+            android:text="Add Doctor"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="400dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/dotted_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:textAllCaps="true"
+            android:text="Select Hospital: "
+            android:textColor="@android:color/holo_red_dark" />
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_doctor_select_hospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_empty_box"
+            android:ems="10"
+            android:hint="type Hospital Here"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="Select Department: "
+            android:textColor="@android:color/holo_red_dark" />
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_doctor_select_department"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_empty_box"
+            android:ems="10"
+            android:hint="type Department Here"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="Doctor Name: "
+            android:textColor="@android:color/holo_red_dark" />
+
+        <EditText
+            android:id="@+id/edt_doctor_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_empty_box"
+            android:ems="10"
+            android:hint="Doctor Name"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="Doctor User Name: "
+            android:textColor="@android:color/holo_red_dark" />
+
+        <EditText
+            android:id="@+id/edt_doctor_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_empty_box"
+            android:ems="10"
+            android:hint="User Name"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="Doctor User Name: "
+            android:textColor="@android:color/holo_red_dark" />
+
+        <EditText
+            android:id="@+id/edt_doctor_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_empty_box"
+            android:ems="10"
+            android:hint="****"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="Doctor Address: "
+            android:textColor="@android:color/holo_red_dark" />
+
+        <EditText
+            android:id="@+id/edt_doctor_address"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/rectangle_empty_box"
+            android:gravity="left"
+            android:hint="Doctor Address "
+            android:inputType="textMultiLine"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="Doctor Contact No: "
+            android:textColor="@android:color/holo_red_dark" />
+
+        <EditText
+            android:id="@+id/edt_doctor_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_empty_box"
+            android:ems="10"
+            android:hint="Doctor Contact"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="Gender: "
+            android:textColor="@android:color/holo_red_dark" />
+
+
+        <RadioGroup
+            android:id="@+id/radio_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rectangle_empty_box"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_male2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="true"
+                android:text="Male"
+                android:textColor="@color/colorAccent" />
+
+            <RadioButton
+                android:id="@+id/radio_female2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Female"
+                android:textColor="@color/colorAccent" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Doctor Image: "
+            android:textColor="@android:color/holo_red_dark" />
+
+        <ImageView
+            android:id="@+id/img_doctor_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/rectangle_empty_box"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/txt_doctor_image_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_add_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle_box"
+            android:text="Add Doctor"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

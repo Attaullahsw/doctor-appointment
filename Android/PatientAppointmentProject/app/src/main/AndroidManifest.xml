@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.patientappointmentproject">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".patient.PatientProfileActivity"></activity>
+        <activity android:name=".patient.MyAppoinmentPatientActivity" />
+        <activity android:name=".doctor.DoctorProfile" />
+        <activity android:name=".patient.AppointTimeActivity" />
+        <activity android:name=".patient.PatientAppointmentActivity" />
+        <activity android:name=".admin.AllDoctorActivity" />
+        <activity android:name=".admin.AllHospitalAdminActivity" />
+        <activity android:name=".patient.AllHospitalPatientActivity" />
+        <activity android:name=".doctor.StartAppointmentActivity" />
+        <activity android:name=".patient.PatientDashBoardActivity" />
+        <activity android:name=".doctor.DoctorDashBoradActivity" />
+        <activity android:name=".admin.AllDepartmentActivity" />
+        <activity
+            android:name=".patient.PatientSignUpActivity"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
+        <activity android:name=".admin.AddDoctorActivity" />
+        <activity android:name=".admin.AssignDepartmentToHospitalActivity" />
+        <activity android:name=".admin.AddHospitalActivity" />
+        <activity android:name=".admin.AddDepartmentActivity" />
+        <activity
+            android:name=".admin.AdminDashBoardActivity"
+            android:label="@string/title_activity_admin_dash_board"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".patient.AllDoctorPatientActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

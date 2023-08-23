@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AddHospitalActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:paddingBottom="50dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alex_brush"
+            android:text="Add Hospital"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="400dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/dotted_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Hospital Name: "
+            android:textColor="@android:color/holo_red_dark" />
+
+        <EditText
+            android:id="@+id/edt_hospital_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_empty_box"
+            android:ems="10"
+            android:hint="Hospital Name"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="Hospital Address: "
+            android:textColor="@android:color/holo_red_dark" />
+
+        <EditText
+            android:id="@+id/edt_hospital_address"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="left"
+            android:background="@drawable/rectangle_empty_box"
+            android:hint="Hospital Address "
+            android:inputType="textMultiLine"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="Hospital Contact No: "
+            android:textColor="@android:color/holo_red_dark" />
+
+        <EditText
+            android:id="@+id/edt_hospital_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_empty_box"
+            android:ems="10"
+            android:hint="Hospital Contact"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Hospital Image: "
+            android:textColor="@android:color/holo_red_dark" />
+
+        <ImageView
+            android:id="@+id/img_hospital_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/rectangle_empty_box"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/txt_hospital_image_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_add_hospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle_box"
+            android:text="Add Hospital"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
